@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pong OS Extension",
+  "description": "Chrome Extension showing ping pong room availability at Solstice Mobile",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "green_paddle.png",
+    "default_popup": "yes.html"
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com; object-src 'self'"
+}
